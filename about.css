@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.font1 {
+    font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+.font2 {
+    font-family: sans-serif, 'Courier New', Courier, monospace, 'baloo nhaina 2';
+}
+
+/* div ,nav {
+    border: 2px solid black;
+} */
+
+.navigation {
+    height: 74px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.content {
+    display: flex;
+    height: 395px;
+    margin-top: 35px;
+    /* background-color: rgb(208,208,243); */
+    padding: 9px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::after {
+    content: "";
+    background-image: url(11.svg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    top: 0;
+    left: 0;
+    height: inherit;
+    opacity: 0.19;
+    z-index: -1;
+
+}
+
+
+.max-width-1 {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+    margin: auto;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.my-2 {
+    margin-bottom: 32px;
+    margin-top: 13px;
+}
+
+/* .btn{
+
+} */
+:root {
+    --main-bg-color: brown;
+}
+
+/* .left{ 
+    font-family:"Baloo Bhai",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+ /* }  */
+/* .left {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+} */
+.left img{
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    margin-top:15px;
+}
+
+.navigation-left {
+    display: flex;
+}
+
+.navigation-left span {
+    font-size: 35px;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin: 0px 15px;
+
+
+}
+
+.navigation ul a:hover {
+    /* background-color: brown; */
+    color: brown;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 550px;
+    
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.form-input {
+    padding: 3px 5px;
+    border-radius: 2px;
+    border: 2px solid black;
+    margin: 0 10px;
+    font-size: 16px;
+    font-family: sans-serif, 'Courier New', Courier, monospace, 'baloo nhaina 2';
+}
+
+.btn {
+    padding: 2px 12px;
+    border: 2px solid black;
+    /* color: red; */
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: brown;
+    color: white;
+}
+
+.content-left {
+    font-family: "Montserrat Alternates", sans-serif;
+    /* font-size: 32px; */
+    /* font-weight: 700; */
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.content-right {
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 355px;
+    width: 355px;
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content-left h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    width: 50%;
+}
+
+.home-articles {
+    /* height: 455px; */
+    padding-top: 12px;
+    /* background-color: rgb(241, 177, 177); */
+}
+
+.home-article {
+    display: flex;
+    justify-content: center;
+    margin: 26px;
+    /* align-items: center; */
+    /* width: 190px; */
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: brown;
+}
+
+.home-article img {
+    width: 200px;
+}
+
+.home-article-content {
+    padding: 25px;
+    align-self: center;
+}
+
+.footer {
+    height: 60px;
+    gap: 8px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.footer a {
+    color: white;
+}
+
+.card {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 320px;
+    transition: 0.3s ease;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    overflow: hidden;
+
+}
+
+/* .card:hover {
+    transform: translateY(-10px) scale(1.02);
+} */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    margin: 40px auto;
+}
+
+.card-body a{
+    text-decoration: none;
+}
+.btn-primary{
+    display: inline-block;
+    padding: 8px 18px;
+
+    border: 2px solid black;
+    border-radius: 8px;
+
+    color: black;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color: brown;
+    color: white;
+}
+
+.card-text{
+    line-height: 1.7;
+    margin: 15px 0;
+    color: #333;
+}
+.card-img-top{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.active{
+    color: brown;
+    font-weight: bold;
+}

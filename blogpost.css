@@ -1,0 +1,396 @@
+html{
+    scroll-behavior: smooth;
+}/* using chat gpt*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.font1 {
+    font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+.font2 {
+    font-family: sans-serif, 'Courier New', Courier, monospace, 'baloo nhaina 2';
+}
+
+/* div ,nav {
+    border: 2px solid black;
+} */
+
+.navigation {
+    height: 74px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.content {
+    display: flex;
+    height: 395px;
+    margin-top: 35px;
+    /* background-color: rgb(208,208,243); */
+    padding: 9px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::after {
+    content: "";
+    background-image: url(11.svg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    top: 0; 
+    left: 0;
+    height: inherit;
+    opacity: 0.19;
+    z-index: -1;
+
+}
+
+
+.max-width-1 {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+    margin: auto;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.my-2 {
+    margin-bottom: 32px;
+    margin-top: 13px;
+}
+
+/* .btn{
+
+} */
+:root {
+    --main-bg-color: brown;
+}
+
+/* .left{ 
+    font-family:"Baloo Bhai",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+ /* }  */
+/* .left {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+} */
+.left img{
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    margin-top:15px;
+}
+
+.navigation-left {
+    display: flex;
+}
+
+.navigation-left span {
+    font-size: 35px;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin: 0px 15px;
+
+
+}
+
+.navigation ul a:hover {
+    /* background-color: brown; */
+    color: brown;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 250px;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.form-input {
+    padding: 3px 5px;
+    border-radius: 2px;
+    border: 2px solid black;
+    margin: 0 10px;
+    font-size: 16px;
+    font-family: sans-serif, 'Courier New', Courier, monospace, 'baloo nhaina 2';
+}
+
+.btn {
+    padding: 2px 12px;
+    border: 2px solid black;
+    /* color: red; */
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: brown;
+    color: white;
+}
+
+
+
+.footer {
+    height: 60px;
+    gap: 8px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction:row;
+    margin-bottom: 0px;
+}
+.footer a {
+    color: white;
+}
+.active{
+    color: brown;
+    font-weight: bold;
+}
+.article-1{
+    /* width: 70%; */
+    margin: 20px 0 20px 0;
+    padding:20px;
+    line-height: 1.6;
+    overflow-wrap:break-word;
+
+
+}
+.article-1 img{
+    width: 80%;
+    height: 60%;
+    max-width: 700px;
+    display:block;
+    margin: 10px auto ;
+    border-radius: 10px;
+    margin-left: 0px;
+    
+}
+.article-1 h2{
+    margin: 10px;
+    white-space: pre-wrap;
+    font-size: 38px;
+    line-height: 1.4;
+    margin-left: 0px;
+}
+.article-1 span{
+    margin-left: 0px;
+    font-size: 19px;
+}
+.article-1 p{
+    
+    margin-left: 0px;
+    font-weight:400;
+    font-size: 21px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+.content-text{
+    width: 100%;
+    margin-left: 0px;
+}
+.main{
+    margin-left: 30px 0;
+}
+.blog-post{
+    gap:20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;/*using chat gpt i m using flex*/
+    align-items: start;
+}
+.cards{
+    /* border: 2px solid red; */
+    /* width: 30%; */
+    margin-left: 0;
+}
+
+
+/* .card2{
+    border: 2px solid red;
+
+} */
+.card, .card2  {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 18rem;
+    transition: 0.3s ease;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    overflow: hidden;
+
+}
+
+/* .card:hover {
+    transform: translateY(-10px) scale(1.02);
+} */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+
+}
+.card2:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+.about-author{
+    padding:2px;
+    display:flex;
+    margin: 4px;
+    /* margin-left: 49px; */
+}
+.aboutsec{
+    margin-left: 12px;
+}
+.authorimg{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius:50%;
+}
+.content-right img {
+    height: 355px;
+    width: 355px;
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.categories{
+    margin: 15px auto auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 08px;
+    cursor:pointer;
+}
+.categories a:hover{
+    
+    color: brown;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin:10px ;
+}
+.post{
+    /* display: flex; */
+    /* flex-direction: row; */
+    height: 45px;
+    width: 55px;
+    border-radius: 8px; 
+    cursor:pointer;
+}
+.post11:hover{
+    
+    color: brown;
+}
+.post11{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.post11 p{
+    margin-left: 20px;
+    cursor:pointer;
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+.buttons button{
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor:pointer;
+    margin-top: 10px;
+
+}
+
+.buttons button:hover{
+    background-color: brown;
+    color: white;
+}
+/*making responsive using chat gpt*/
+@media(max-width:768px){
+
+    .navigation{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .navigation ul{
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .content-right img{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .home-article{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-article img{
+        width: 100%;
+        max-width: 320px;
+    }
+    .content::after{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+    .blog-post {
+        grid-template-columns: 1fr;
+    }
+}
+body{
+    overflow-x: hidden;
+}
