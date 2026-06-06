@@ -15,15 +15,59 @@
 /* div ,nav {
     border: 2px solid black;
 } */
-
+body{
+    padding-top: 80px;
+}
 .navigation {
-    height: 74px;
+    /* height: 74px;
     /* background-color: red; */
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 25px; */
+
+
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+    /* background-color: white; */
+
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    z-index: 1000; */
+
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.09); */
+    /* border: 2px solid red; */
+
+    height: 74px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    margin-top: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    
+    z-index: 1000;
+
+    padding: 0 10%;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.8);
+
+
 }
 
 .content {
@@ -122,7 +166,8 @@
 .navigation ul {
     display: flex;
     justify-content: center;
-    margin-right: 550px;
+    /* margin-right: 550px; */
+    gap:20px;
     
 }
 

@@ -126,7 +126,7 @@ Every modern web developer should learn responsive web design techniques.
     image: "2.png",
 
     authorimg: "neha.jpeg",
-    authorole: "Student Blogger & Content Creator",
+    authorrole: "Student Blogger & Content Creator",
     authorbio:
       "Neha writes about student productivity, blogging consistency, and self-improvement habits for learners.",
 
